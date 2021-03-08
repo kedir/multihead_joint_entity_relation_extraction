@@ -2,15 +2,15 @@
 
 Implementation of the papers
 [Joint entity recognition and relation extraction as a multi-head selection problem](https://arxiv.org/abs/1804.07847) and 
-[Adversarial training for multi-context joint entity and relation extraction](https://arxiv.org/abs/1808.06876).
 
 # Requirements
 * Ubuntu 16.04
 * Anaconda 5.0.1
-* Numpy 1.14.1
+* Numpy 1.17.1
 * Gensim 3.4.0
-* Tensorflow 1.5.0
+* Tensorflow 1.13.1
 * PrettyTable 0.7.2
+* Pandas 1.1.5
 
 ## Task
 Given a sequence of tokens (i.e., sentence), (i) give the entity tag of each word (e.g., NER) and (ii) the relations between the entities in the sentence. The following example indicates the accepted input format of our multi-head selection model:
@@ -42,6 +42,8 @@ that could be specified in the configuration files (see [config](https://github.
 
 ## Run the model
 
+In order to run the model use the notebook named as the multi_head_joint_entity_relation_extraction.ipynb 
+and run on google colab or just follow the instruction below:
 ```
 ./run.sh
 ```
@@ -51,14 +53,10 @@ Commands executed in ```./run.sh```:
 
 1. Train on the training set and evaluate on the dev set to obtain early stopping epoch
 ```python3 train_es.py```
-2. Train on the concatenated (train + dev) set and evaluate on the test set until either (1) the max epochs or (2) the early stopping limit (specified by train_es.py) is exceeded
-```python3 train_eval.py```
 
 ## Notes
 
-Please cite our work when using this software.
+Please cite the authors work when using this software.
 
 Giannis Bekoulis, Johannes Deleu, Thomas Demeester, Chris Develder. Joint entity recognition and relation extraction as a multi-head selection problem. Expert Systems with Applications, Volume 114, Pages 34-45, 2018
-
-Giannis Bekoulis, Johannes Deleu, Thomas Demeester, Chris Develder. Adversarial training for multi-context joint entity and relation extraction, In the Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2018
 
