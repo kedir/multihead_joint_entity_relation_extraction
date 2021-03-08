@@ -1,7 +1,7 @@
 # Joint entity recognition and relation extraction as a multi-head selection problem
 
 Implementation of the papers
-[Joint entity recognition and relation extraction as a multi-head selection problem](https://arxiv.org/abs/1804.07847) and 
+[Joint entity recognition and relation extraction as a multi-head selection problem](https://arxiv.org/abs/1804.07847)
 
 # Requirements
 * Ubuntu 16.04
@@ -42,8 +42,9 @@ that could be specified in the configuration files (see [config](https://github.
 
 ## Run the model
 
-In order to run the model use the notebook named as the multi_head_joint_entity_relation_extraction.ipynb 
+In order to run the model use the notebook named as " multi_head_joint_entity_relation_extraction.ipynb "
 and run on google colab or just follow the instruction below:
+
 ```
 ./run.sh
 ```
